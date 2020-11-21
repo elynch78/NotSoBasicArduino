@@ -45,7 +45,10 @@ Make sure you have a resistor so you don't blow your led. You should only need 2
 [LED Fade on Arduino Create](https://create.arduino.cc/editor/helmstk1/9e044cca-43d7-4d93-885f-e6dec5b4f769/preview)
 
 ### Images 
-![Fade](fade.png)
+
+<img src="images/FadeScreenshot.jpg" alt="The Bose" width="10">
+
+
 Credit to [magiceco](https://fritzing.org/projects/led-fade-by-magiceco)
 
 ### Reflection
