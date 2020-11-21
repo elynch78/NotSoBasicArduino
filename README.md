@@ -12,9 +12,7 @@
 ## LED_Fade
 
 ### Description & Code
-Description goes here
-
-Here's how you make code look like code:
+ Instead of just blinking, you can make the led slowly change brightness, causing it to fade. 
 
 
 ```C++
@@ -41,12 +39,14 @@ void loop() {
 ```
 
 Talk about how the fade works, here....
+Fading is different than blinking an led because the brightness is going from the minimum to maximum (0-255) in incrememnts of 5 and repeats. The higher the delay number is, the longer the fade will take and it will look less like a fade and more like the led is just lighting up and then sometimes going out. 
 
 ### Evidence
 [LED Fade on Arduino Create](https://create.arduino.cc/editor/helmstk1/9e044cca-43d7-4d93-885f-e6dec5b4f769/preview)
 
 ### Images
-
+![Fade.png](Fade.png)
+Credit to [magiceco](https://fritzing.org/projects/led-fade-by-magiceco)
 ### Reflection
 
 ## HelloFunctions
