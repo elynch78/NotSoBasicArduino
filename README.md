@@ -45,7 +45,7 @@ Fading is different than blinking an led because the brightness is going from th
 [LED Fade on Arduino Create](https://create.arduino.cc/editor/helmstk1/9e044cca-43d7-4d93-885f-e6dec5b4f769/preview)
 
 ### Images
-![Fade.png](Fade.png)
+![Fade](Fade Arduino.jpg)
 Credit to [magiceco](https://fritzing.org/projects/led-fade-by-magiceco)
 ### Reflection
 
