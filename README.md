@@ -44,9 +44,10 @@ Make sure you have a resistor so you don't blow your led. You should only need 2
 ### Evidence
 [LED Fade on Arduino Create](https://create.arduino.cc/editor/helmstk1/9e044cca-43d7-4d93-885f-e6dec5b4f769/preview)
 
-### Images
-![Fade](Fade Arduino.jpg)
+### Images 
+![Fade](fade.png)
 Credit to [magiceco](https://fritzing.org/projects/led-fade-by-magiceco)
+
 ### Reflection
 Fading is different than blinking an led because the brightness is going from the minimum to maximum (0-255) in incrememnts of 5 and repeats. The higher the delay number is, the longer the fade will take and it will look less like a fade and more like the led is just lighting up and then sometimes going out. If you're struggling, google is your friend. 
 ## HelloFunctions
