@@ -46,7 +46,7 @@ Make sure you have a resistor so you don't blow your led. You should only need 2
 
 ### Images 
 
-<img src="images/FadeScreenshot.jpg" alt="The Bose" width="10">
+<img src="Images/FadeScreenshot.jpg" alt="The Bose" width="300">
 
 
 Credit to [magiceco](https://fritzing.org/projects/led-fade-by-magiceco)
