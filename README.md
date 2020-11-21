@@ -1,4 +1,4 @@
-# NotSoBasicArduino
+# BasicArduino
  The follwing files are my second foray into Arduino
  
  
@@ -27,6 +27,29 @@ Here's how you make code look like code:
     fadeAmount = -fadeAmount;
   }
 ```
+'''C++
+//Ellen Lynch
+//November 18, 2020
+//This code makes the led fade. 
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // set the brightness of pin 9:
+  analogWrite(led, brightness);
+
+  // change the brightness for next time through the loop:
+  brightness = brightness + fadeAmount;
+
+  // reverse the direction of the fading at the ends of the fade:
+  if (brightness <= 0 || brightness >= 255) {
+     fadeAmount = -fadeAmount;
+     
+  }
+  
+  delay(30);   // wait for 30 milliseconds to see the dimming effect
+}
+'''
+
 Talk about how the fade works, here....
 
 ### Evidence
