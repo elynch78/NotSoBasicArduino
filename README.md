@@ -16,18 +16,8 @@ Description goes here
 
 Here's how you make code look like code:
 
+
 ```C++
-  analogWrite(led, brightness);
-
-  // change the brightness for next time through the loop:
-  brightness = brightness + fadeAmount;
-
-  // reverse the direction of the fading at the ends of the fade:
-  if (brightness <= 0 || brightness >= 255) {
-    fadeAmount = -fadeAmount;
-  }
-```
-'''C++
 //Ellen Lynch
 //November 18, 2020
 //This code makes the led fade. 
@@ -48,7 +38,7 @@ void loop() {
   
   delay(30);   // wait for 30 milliseconds to see the dimming effect
 }
-'''
+```
 
 Talk about how the fade works, here....
 
