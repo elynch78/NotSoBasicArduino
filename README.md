@@ -52,16 +52,33 @@ Make sure you have a resistor so you don't blow your led. You should only need 2
 Credit to [magiceco](https://fritzing.org/projects/led-fade-by-magiceco)
 
 ### Reflection
-Fading is different than blinking an led because the brightness is going from the minimum to maximum (0-255) in incrememnts of 5 and repeats. The higher the delay number is, the longer the fade will take and it will look less like a fade and more like the led is just lighting up and then sometimes going out. If you're struggling, google is your friend. 
+Fading is different than blinking an led because the brightness is going from the minimum to maximum (0-255) in incrememnts of 5 and repeats. The higher the delay number is, the longer the fade will take and it will look less like a fade and more like the led is just lighting up and then sometimes going out. If you're struggling, google is your friend.
+
 ## HelloFunctions
 
 ### Description & Code
 Description goes here
 
-Here's how you make code look like code:
 
 ```C++
-Code goes here
+int times = 0;
+void setup() {
+  pinMode(9, OUTPUT);
+
+}
+
+void loop() {
+  if (times < 5) {  //this will make it so that when it has blinked 4 times, it will stop. 
+    digitalWrite(9, HIGH);
+    Serial.println(times);
+    delay(250);
+    digitalWrite(9, LOW);
+    delay(250);
+  times++; //This is saying blink one more time than it said and THEN stop. 
+
+  }
+}
+
 ```
 Talk about how the code works, here....
 
