@@ -86,7 +86,8 @@ You should know how to control the amount of times an led blinks. When coding th
 [Link](https://create.arduino.cc/editor/elynch78/c2e8bac5-0ed3-4234-b540-29a3c01eecb0)
 
 ### Images
-![Led blink circuit](Images/Ledblink.jpg)
+<img src="Images/Ledblink.jpg" alt="The Bose" width="500">
+Credit to Maccattack123
 ### Reflection
 
 ## NewPing
