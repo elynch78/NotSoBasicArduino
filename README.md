@@ -57,7 +57,7 @@ Fading is different than blinking an led because the brightness is going from th
 ## HelloFunctions
 
 ### Description & Code
-Description goes here
+Have the breadboard and arduino set up like normal. See the fading assignment if you need help setting it up. All you' re going to do different is that you will be adding restrictions so it doesn' t go forever until you unplug the arduino. The code sets restrictions so that the led can blink only 5 times. 
 
 
 ```C++
@@ -80,14 +80,13 @@ void loop() {
 }
 
 ```
-Talk about how the code works, here....
+You should know how to control the amount of times an led blinks. When coding this, you need a variable, I used times. The variable can' t be greater than the number of times you want the led to flash. (5) That will make it stop blinking once it has done one less blink than the amount you want. That' s why we add times++ at the end because we want the led to blink one more time than we set it to in the times < 5. 
 
 ### Evidence
-link goes here
+[Link](https://create.arduino.cc/editor/elynch78/c2e8bac5-0ed3-4234-b540-29a3c01eecb0)
 
 ### Images
-draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIVELY communicate how its put together.
-
+![Led blink circuit](Ledblink.jpg)
 ### Reflection
 
 ## NewPing
