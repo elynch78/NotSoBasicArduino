@@ -88,9 +88,9 @@ You should know how to control the amount of times an led blinks. When coding th
 ### Images
 <img src="Images/Ledblink.jpg" alt="The Bose" width="500">
 Credit to Maccattack123
-### Reflection
 
-## NewPing
+### Reflection
+This is the exact same wiring set up as fading, or a normal blinking led. All that is changing is that in the code, we are adding restraints and it can only blink 5 times and then will stop until you run it again. If you still are stuck on how to use an arduino [this can be a good recourse for you to use](https://www.youtube.com/watch?v=CqrQmQqpHXc&feature=emb_title)
 
 ### Description & Code
 Description goes here
