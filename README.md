@@ -5,6 +5,7 @@
 ## Table of Contents
 * [Table of Contents](#TableOfContents)
 * [LED_Fade](#LED_Fade)
+* [Finite Led](#Finite_Led)
 * [HelloFunctions](#HelloFunctions)
 * [NewPing](#NewPing)
 ---
@@ -54,7 +55,8 @@ Credit to [magiceco](https://fritzing.org/projects/led-fade-by-magiceco)
 ### Reflection
 Fading is different than blinking an led because the brightness is going from the minimum to maximum (0-255) in incrememnts of 5 and repeats. The higher the delay number is, the longer the fade will take and it will look less like a fade and more like the led is just lighting up and then sometimes going out. If you're struggling, google is your friend.
 
-## HelloFunctions
+
+## Finite_Led
 
 ### Description & Code
 Have the breadboard and arduino set up like normal. See the fading assignment if you need help setting it up. All you' re going to do different is that you will be adding restrictions so it doesn' t go forever until you unplug the arduino. The code sets restrictions so that the led can blink only 5 times. 
@@ -91,6 +93,17 @@ Credit to Maccattack123
 
 ### Reflection
 This is the exact same wiring set up as fading, or a normal blinking led. All that is changing is that in the code, we are adding restraints and it can only blink 5 times and then will stop until you run it again. If you still are stuck on how to use an arduino [this can be a good recourse for you to use](https://www.youtube.com/watch?v=CqrQmQqpHXc&feature=emb_title)
+
+## HelloFunctions
+
+### Description & Code
+
+### Evidence
+
+### Images
+
+### Reflection
+
 
 ### Description & Code
 Description goes here
