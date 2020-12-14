@@ -136,7 +136,7 @@ void loop() {
 ### Images
 ![Buttonled](Images/Buttonled.png)
 ### Reflection
-
+The wiring works as a button becase of your code. You need an If, else statement to make it work as a button. That way, If the whole circuit is connected, the wire is in, the led will turn on. But when it isn't plugged in, Else, the led will be off. You use digitalRead so that it registers the input pin being connected. This is important because now when you plug your cord into 5v, it will register you doing so and complete the if statement's actions. [This can give you further information on digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) And if you are confused or stuck on the assignment, [this video is very helpful and walks you through it](https://www.youtube.com/watch?v=ksNbEuhO4fU&feature=emb_title) 
 
 ## HelloFunctions
 
