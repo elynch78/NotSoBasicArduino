@@ -98,11 +98,43 @@ This is the exact same wiring set up as fading, or a normal blinking led. All th
 ## Arduino_Review
 
 ### Description & Code
+The code creates a "button" that when you plug and unplug the 5V cord will turn on and off the led. You set the ButtonState to 0 so that when you plug in the cord, pushing the button, the energy flows to the led. The if statement makes it so that whe you press the button the led lights up, if it isn't pressed (else) then the led will be dark. 
+
+```C++
+int ledPin = 9; //number of the led pin
+int buttonState = 0; // variable for reading the button's state
+int buttonPin = 7; //the number of the button pin
+int delayVar = 1000;
+
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState != 0) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  } 
+  else {
+    // if button is not pressed turn LED off:
+    digitalWrite(ledPin, LOW);
+  }
+}
+```
+
 
 ### Evidence
-
+[Link](https://create.arduino.cc/editor/elynch78/c2e8bac5-0ed3-4234-b540-29a3c01eecb0)
 ### Images
-
+![Buttonled](Images/Buttonled.jpg)
 ### Reflection
 
 
