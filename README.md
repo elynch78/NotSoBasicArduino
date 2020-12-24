@@ -182,7 +182,7 @@ In my code I have a variable lightCal, this variable doesn't have a designated v
 ![Photoresistor](Images/Photoresistor.png)
 
 ### Reflection
-An important thing to remember is that you need an original raw light value. The point of a raw value is that later on when the sensor is reading a certain number below the original value the LED will turn on. Without the begining light value, the sensor will not know when to turn the led on because the light value is changing all the time and doesn't have a number to line up against. If you are having trouble with this assignment understanding how to use the photresistor and code for it, [this tab is very helpful(https://create.arduino.cc/projecthub/Ayeon0122/reading-a-photoresistor-1e705e)
+An important thing to remember is that you need an original raw light value. The point of a raw value is that later on when the sensor is reading a certain number below the original value the LED will turn on. Without the begining light value, the sensor will not know when to turn the led on because the light value is changing all the time and doesn't have a number to line up against. If you are having trouble with this assignment understanding how to use the photresistor and code for it, [this tab is very helpful](https://create.arduino.cc/projecthub/Ayeon0122/reading-a-photoresistor-1e705e)
 
 
 ## HelloFunctions
