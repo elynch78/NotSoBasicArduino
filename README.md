@@ -7,6 +7,7 @@
 * [LED_Fade](#LED_Fade)
 * [Finite Led](#Finite_Led)
 * [Arduino Review](#Arduino_Review)
+* [Photoresistor](#Photoresistor)
 * [HelloFunctions](#HelloFunctions)
 * [NewPing](#NewPing)
 ---
@@ -137,6 +138,52 @@ void loop() {
 ![Buttonled](Images/Buttonled.png)
 ### Reflection
 The wiring works as a button becase of your code. You need an If, else statement to make it work as a button. That way, If the whole circuit is connected, the wire is in, the led will turn on. But when it isn't plugged in, Else, the led will be off. You use digitalRead so that it registers the input pin being connected. This is important because now when you plug your cord into 5v, it will register you doing so and complete the if statement's actions. [This can give you further information on digitalRead](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) And if you are confused or stuck on the assignment, [this video is very helpful and walks you through it](https://www.youtube.com/watch?v=ksNbEuhO4fU&feature=emb_title) 
+
+
+## Photoresistor
+
+### Description & Code
+A photoresistor is a sensor that detect light. The goal of this assignment was to make a circuit where when the photoresistor reads that there is not enough light, an led will turn on. When there is light again, the led will turn off. 
+
+```C++
+int ledPin = 9;
+int lightlevel = 0;
+int lightCal; //variable for raw light value
+
+void setup() {
+  pinMode(9, OUTPUT);
+  pinMode(A0, OUTPUT);
+  lightCal = analogRead(A0); 
+  Serial.println("lightCal : ");
+  Serial.println(lightCal); //takes a raw original reading and stores it to calibrate for the loop. 
+  Serial.begin(9600);
+}
+
+
+void loop() {
+  lightlevel = analogRead(A0);
+  Serial.println("Light Level : ");
+  Serial.println(lightlevel);
+  delay(250);
+  if (lightlevel < lightCal - 4){  //when the light is under the original light value by 4 the led will turn on
+    digitalWrite(9, HIGH); 
+  } else { //when there is light the led will not be on
+  digitalWrite(9, LOW);
+  }
+}
+```
+In my code I have a variable lightCal, this variable doesn't have a designated value because later on in void setup it will read a raw light value before the led comes into play. The point of having a raw original light value is so that later on the IF statement in void loop the photoresistor will sense when the light level is under the original raw value by 4 the led will turn on. In the ELSE statement when the photoresistor senses light again it will turn the led off. 
+
+### Evidence
+
+[link](https://create.arduino.cc/editor/elynch78/11689b90-3ca1-4bba-a525-7fd3e1268e4a)
+
+### Images
+![Photoresistor](Images/Photoresistor.png)
+
+### Reflection
+An important thing to remember is that you need an original raw light value. The point of a raw value is that later on when the sensor is reading a certain number below the original value the LED will turn on. Without the begining light value, the sensor will not know when to turn the led on because the light value is changing all the time and doesn't have a number to line up against. If you are having trouble with this assignment understanding how to use the photresistor and code for it, [this tab is very helpful(https://create.arduino.cc/projecthub/Ayeon0122/reading-a-photoresistor-1e705e)
+
 
 ## HelloFunctions
 
